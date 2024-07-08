@@ -1,0 +1,93 @@
+@charset "utf-8";
+/*인트로 페이지 CSS - intro.css*/
+
+/*웹폰트 외부파일 불러오기*/
+@import url('https://fonts.googleapis.com/css2?family=Titillium+web&display=swap');
+
+html,body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    
+}    
+
+
+body::after{
+    content: "";
+    display: block;
+   
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: .5;
+}
+
+/*비디오*/
+#myvid{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+
+#enter{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    
+    transform: translate(-50%,-50%); 
+    
+    
+    
+    z-index:  1;
+}
+
+
+#enter a{
+    color: #fff;
+    text-decoration: none;
+    
+}
+
+#enter span{
+    display: block;
+    
+    text-align: center;
+    
+    font: bold 34px/40px Audiowide;
+    
+    transition: all .4s ease-out .2s;
+    
+}
+
+#enter:hover span{
+    
+    transform: scale(2);
+    color: chartreuse;
+}
+#enter:hover img{
+    transform: scale(1.5) rotate(-15deg);
+   
+}
+
+
+#enter img{
+    
+    transition: all .4s ease-out;
+}
+
+
+
+
+
+
+
+
+    
+

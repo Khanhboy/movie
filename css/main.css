@@ -1,0 +1,293 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Cute+Font|Jua&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  font-family: "Verdana, Arial, sans-serif";
+  }
+html,
+body,
+h1,
+h2,
+h3 {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    }
+    body {
+ 
+    background-color: #000;
+  
+    color: #fff;
+}
+
+
+.part {
+    width: 1200px;
+    margin: 0 auto;
+    
+}
+
+
+#top {
+    position: relative;
+    height: 80px;
+    z-index: 999;
+   
+}
+
+
+#cont {
+    position: relative;
+    
+    height: 888px;
+    background: url(../images/bg.jpg) no-repeat;
+}
+
+
+#info {
+    position: relative;
+  
+    height: 100px;
+}
+
+
+
+
+.tit {
+    height: 100%;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Jua', sans-serif;
+    line-height: 80px;
+    color: aquamarine;
+    text-shadow: 0 0 10px aquamarine;
+    background: url(../images/curtain.jpg)
+        repeat-x;
+
+
+
+}
+.gnb {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;}
+
+.gnb ul {
+   
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+.gnb ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.gnb ul>li {
+    position: relative;
+    float: left;
+    padding: 0 10px;
+
+}
+
+.gnb ul li a {
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    font-family: "Verdana, Arial, sans-serif";
+    font-size: 20px;
+
+
+}
+
+.smenu{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width:150px;
+    padding: 10px;
+    background: url(../images/bg_smenu.png) no-repeat center/cover;
+    display: none;
+    
+}
+.gnb ul>li:hover .smenu{
+    display: block;
+}
+
+.smenu::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: 55px;
+    width: 0px;
+    height: px;
+    border-bottom: 10px solid #ccc;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+}
+
+
+.smenu ol{
+    border: 2px solid #ccc;
+    margin: 0;
+    padding: 10px;
+    list-style: none;
+}
+.gnb .smenu a{
+    font-size: 11px;
+}
+.gnb .smenu a:hover{
+    color: #f00;
+}
+.gnb .smenu a:hover::after{
+    content: "☞";
+    vertical-align: -5px;
+    float: right;
+    position: relative;
+    top: 5px;
+    left: 5px;
+    
+}
+
+.sbar{
+    border-top: 2px solid #ccc;
+    margin-top: 5px;
+}
+
+
+#screen {
+    position: absolute;
+    top: 136px;
+    left: 255px;
+    width: 710px;
+    height: 398px;
+    background-color: #000;
+}
+
+#screen iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.mlist {
+    position: absolute;
+    bottom: 50px;
+    left: 260px;
+
+    overflow: hidden;
+
+}
+
+
+.mlist ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+}
+
+.mlist ul > li {
+    float: left;
+    
+    padding: 0 10px;
+    cursor: pointer;
+   
+}
+.mlist img {
+    width: 99px;
+    height: 140px;
+
+}
+ol.movtxt {
+    position: absolute;
+    top: 100%;
+    width: 99px;
+    height: 140px;
+    text-align: center;
+    font: 14px/25px 'Cute Font';
+    background-color: rgba(0, 0, 0, 0.7);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    transition: top .4s ease-out;
+
+
+}
+
+.mlist > ul > li:hover .movtxt {
+    top: 0;
+}
+.movtxt li:first-child {
+    border-top: 30px;
+    color: aqua;
+    font-size: 17px;
+
+}
+#info address {
+    font-style: normal;
+    font-size: 18px;
+    font-family: "Cute Font";
+    line-height: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+#info address img {
+    float: left;
+    margin-right: 20px;
+}
+
+.sns {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+
+.sns li {
+    float: left;
+    width: 34px;
+    height: 34px;
+    background: url(../images/sprites_logo.png) no-repeat;
+}
+
+.sns li:first-child{
+    background-position: -510px -429px;
+}
+
+.sns li:nth-child(2){
+    background-position: -551px -429px;
+}
+
+.sns li:last-child{
+    background-position: -592px -429px;
+}
+ul{
+    list-style: none;
+  }
+
+.sns a {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+}
+.bld {
+    display: block;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+
+}
